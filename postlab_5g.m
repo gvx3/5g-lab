@@ -39,10 +39,6 @@ floor2_DLthroughput_4G = floor2.PDSCHThrpt__PCell_(:,:);
 floor2_ULthroughput_5G = floor2.NetPUSCHThp(:,:);
 floor2_ULthroughput_4G = floor2.PUSCHThrpt__PCell_(:,:);
 
-floor0_time = datetime(floor0.Time, 'Format','dd-MMM-uuuu HH:mm:ss.SSS');
-floor1_time = datetime(floor1.Time, 'Format','dd-MMM-uuuu HH:mm:ss.SSS');
-floor2_time = datetime(floor2.Time, 'Format','dd-MMM-uuuu HH:mm:ss.SSS');
-
 
 avg_floor0_RSRP_5G = mean(floor0_RSRP_5G, 'omitnan');
 avg_floor0_RSRP_4G = mean(floor0_RSRP_4G, "omitnan");
